@@ -27,7 +27,7 @@ finaldata['Rotten Tomatoes'] = finaldata['Rotten Tomatoes'].astype(float)
 print(finaldata.info())
 TotalScore=finaldata['IMDb']+finaldata['Rotten Tomatoes']
 finaldata['TotalScore']=TotalScore
-print(finaldata)
+
 
 #Analytics & Charts
 print(finaldata.iloc[finaldata['TotalScore'].idxmax()])
