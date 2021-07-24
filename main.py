@@ -30,8 +30,8 @@ finaldata['TotalScore']=TotalScore
 print(finaldata)
 
 #Analytics & Charts
-print(finaldata['TotalScore'].max())
-print(finaldata['TotalScore'].min())
+print(finaldata.iloc[finaldata['TotalScore'].idxmax()])
+print(finaldata.iloc[finaldata['TotalScore'].idxmin()])
 print(finaldata.groupby('Rating').first())
 
 #Bar Chart No. of Movies
