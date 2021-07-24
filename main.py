@@ -48,9 +48,19 @@ plt.title('Number of Movies by Age Rating')
 plt.show()
 
 sns.scatterplot(x='IMDb',
+                y='Year',
+                data=finaldata)
+plt.show()
+sns.scatterplot(x='Rotten Tomatoes',
+                y='Year',
+                data=finaldata)
+plt.show()
+
+sns.scatterplot(x='IMDb',
                 y='Rotten Tomatoes',
                 data=finaldata)
 plt.show()
+
 
 #Selecting Top 10
 Top10TS=(finaldata.sort_values(by=['TotalScore'],ascending=False).head(10))
