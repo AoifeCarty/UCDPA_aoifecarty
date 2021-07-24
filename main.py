@@ -55,9 +55,9 @@ plt.show()
 #Selecting Top 10
 Top10TS=(finaldata.sort_values(by=['TotalScore'],ascending=False).head(10))
 
-Top10IMDb=(finaldata.sort_values(by=['IMDb'],ascending=False).head(10))
+Top10IMDb=(ND2.sort_values(by=['IMDb'],ascending=False).head(10))
 print(Top10IMDb)
-Top10RT=(finaldata.sort_values(by=['Rotten Tomatoes'],ascending=False).head(10))
+Top10RT=(ND2.sort_values(by=['Rotten Tomatoes'],ascending=False).head(10))
 print(Top10RT)
 Top10IMDb.to_excel(r'C:\Users\aoife\exportIMDb.xlsx', index=False, header=True)
 Top10RT.to_excel(r'C:\Users\aoife\exportRT.xlsx', index=False, header=True)
